@@ -1,5 +1,6 @@
+// @use 'variables';
 // $portrait-image: url(../img/portrait.JPG);
-$portrait-image: url('https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-Portrait-Photographer-in-Dublin-Ireland..jpg');
+
 .menu-btn {
 	position: absolute;
 	z-index: 3;
@@ -36,11 +37,12 @@ $portrait-image: url('https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-
 	}
 }
 
+//Menu Overlay
 .menu {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	opacity: 0.9;
+	opacity: 1;
 	visibility: hidden;
 
 	&.show {
@@ -63,9 +65,9 @@ $portrait-image: url('https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-
 		margin: 0;
 		padding: 0;
 		background: darken($primary-color, 5);
-		list-style: none;
-		transform: translate3d(0, -100%, 0);
-		@include easeOut;
+		list-style: none; //Remove Bullet Pints
+		transform: translate3d(0, -100%, 0); //Come from the top so -100%
+		@include easeOut; //Call easOut function from _config.sass
 
 		&.show {
 			//Slide in from top
@@ -89,18 +91,26 @@ $portrait-image: url('https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-
 			background: $portrait-image;
 			border-radius: 50%;
 			border: solid 3px $secondary-color;
-			z-index: 3;
+			// z-index: 3;
+			background-size: cover;
+		}
+
+		img {
+			width: 250px;
+			height: 250px;
+			border-radius: 50%; //makes circle
+			// border: solid 3px $secondary-color;
 		}
 	}
 
 	.nav-item {
-		// transform: translate3d(100px, 0, 0);
-		// @include easeOut;
+		transform: translate3d(-600px 0, 0);
+		@include easeOut;
 
-		// &.show {
-		// 	//Slide in from right
-		// 	transform: translate3d(0, 0, 0);
-		// }
+		&.show {
+			//Slide in from right
+			transform: translate3d(0, 0, 0);
+		}
 
 		&.current > a {
 			color: $secondary-color;
@@ -108,7 +118,7 @@ $portrait-image: url('https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-
 	}
 
 	.nav-link {
-		display: inline-block;
+		display: inline-block; //each row
 		position: relative;
 		font-size: 30px;
 		text-transform: uppercase;
@@ -126,8 +136,8 @@ $portrait-image: url('https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-
 
 //Delay each nav item slide by 0.1s
 
-// @for $x from 1 through 4 {
-// 	.nav-item:nth-child(#{$x}) {
-// 		transition-delay: $x * 0.1s;
-// 	}
-// }
+@for $x from 1 through 4 {
+	.nav-item:nth-child(#{$x}) {
+		transition-delay: $x * 0.1s;
+	}
+}
