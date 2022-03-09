@@ -88,19 +88,22 @@
 		.portrait {
 			width: 250px;
 			height: 250px;
-			background: $portrait-image;
+			background-image: $portrait-image;
+			// background-position: (12px 10px); change position of picture
 			border-radius: 50%;
 			border: solid 3px $secondary-color;
 			// z-index: 3;
 			background-size: cover;
+			// -webkit-filter: grayscale(100%); Make image black and white
+			// filter: grayscale(100%);
 		}
 
-		img {
-			width: 250px;
-			height: 250px;
-			border-radius: 50%; //makes circle
-			// border: solid 3px $secondary-color;
-		}
+		// img {
+		// 	width: 250px;
+		// 	height: 250px;
+		// 	border-radius: 50%; //makes circle
+		// 	// border: solid 3px $secondary-color;
+		// }
 	}
 
 	.nav-item {

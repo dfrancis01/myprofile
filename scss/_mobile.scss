@@ -40,16 +40,17 @@
 		transform: translate3d(100%, 0, 0);
 
 		.portrait {
-			background: $portrait-image;
+			// background-image: $portrait-image;
+			// background-size: cover;
 			width: 150px;
 			height: 150px;
 		}
-		img {
-			width: 150px;
-			height: 150px;
-			border-radius: 50%; //makes circle
-			// border: solid 3px $secondary-color;
-		}
+		// img {
+		// 	width: 150px;
+		// 	height: 150px;
+		// 	border-radius: 50%; //makes circle
+		// 	// border: solid 3px $secondary-color;
+		// }
 	}
 
 	.about-info {

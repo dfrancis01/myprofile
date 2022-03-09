@@ -55,14 +55,10 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-Portrait-Photographer-in-Dublin-Ireland..jpg");
+      background-image: url("https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-Portrait-Photographer-in-Dublin-Ireland..jpg");
       border-radius: 50%;
       border: solid 3px #eece1a;
       background-size: cover; }
-    .menu-branding img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(-600px 0, 0);
     transition: all 0.5s ease-out; }
@@ -215,13 +211,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-Portrait-Photographer-in-Dublin-Ireland..jpg");
       width: 150px;
       height: 150px; }
-    .menu-branding img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; } }
