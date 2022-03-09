@@ -165,6 +165,10 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
+    width: 250px;
+    height: 250px;
+    background-image: url("https://www.lensmen.ie/wp-content/uploads/2015/02/Profile-Portrait-Photographer-in-Dublin-Ireland..jpg");
+    background-size: cover;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
