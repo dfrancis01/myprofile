@@ -20,6 +20,6 @@
   "homepage": "https://github.com/dfrancis01/myprofile#readme",
   "dependencies": {
     "gh-pages": "^3.2.3",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.3"
   }
 }
